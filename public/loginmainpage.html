@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="loginmainpage.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="firstnav">
+        <div id="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 80 80"
+            width="30px"
+          >
+            <path
+              fill="red"
+              d="M73.93,28.869c0,0-1.103,6.94-6.11,6.94c-7.32,0-3.067-12.303-3.067-18.808 c0-12.162-8.875-15.632-8.875-15.632s4.993,5.284,4.993,13.272c0,20.849-31.273,20.427-31.273,35.067 c0,2.753,1.737,3.475,1.737,3.475s2.528-5.108,8.771-6.559l0.906-5.778l1.976,0.31l-0.806,5.143 c0.427-0.036,0.86-0.065,1.315-0.065c7.003,0,8.687,5.895,8.687,9.37c0,4.915-4.05,10.761-13.251,11.413l-1.631,10.402 c0.891,0.052,1.794,0.087,2.72,0.087c18.125,0,36.485-12.65,36.485-35.021C76.507,31.826,73.93,28.869,73.93,28.869z"
+            />
+            <path
+              fill="white"
+              d="M36.901,67.066c-8.591-0.164-17.418-7.094-17.418-17.359c0-20.849,33.944-17.134,33.944-34.748 c0-2.931-2.112-4.343-2.112-4.343c0,7.818-11.293,11.293-11.293,11.293c4.783-8.809-1.737-15.636-1.737-15.636 S33.5,25.384,22.648,25.384c-9.148,0-3.475-12.162-3.475-12.162S3.539,18.727,3.539,41.313c0,16.808,10.653,33.745,31.763,35.946 L36.901,67.066z"
+            />
+            <g>
+              <path
+                fill="Blue"
+                d="M39.012,66.509l-0.158,1.01c9.083-0.615,13.83-6.295,13.83-11.917c0-4.553-2.406-9.871-9.187-9.871 c-0.425,0-0.834,0.021-1.235,0.052l-0.159,1.017c0.45-0.042,0.911-0.069,1.394-0.069c7.958,0,8.187,7.963,8.187,8.871 C51.684,60.702,47.338,65.857,39.012,66.509z"
+              />
+              <path
+                fill="green"
+                d="M35.379,76.774C13.888,74.605,4.04,57.388,4.04,41.313c0-18.415,10.668-25.336,14.189-27.117 c-0.82,2.158-2.201,6.737-0.442,9.498c0.925,1.453,2.561,2.189,4.861,2.189c9.833,0,14.729-14.629,15.866-18.556 c1.458,1.916,4.801,7.468,1.068,14.342l-0.584,1.077l1.171-0.36c0.454-0.14,10.642-3.359,11.577-10.684 c0.537,0.631,1.181,1.711,1.181,3.256c0,8.114-7.581,11.564-15.607,15.217c-9.015,4.103-18.336,8.346-18.336,19.531 c0,10.535,9.151,17.648,17.84,17.854l0.156-0.992c-8.253-0.124-16.996-6.862-16.996-16.862c0-10.542,9.024-14.649,17.751-18.621 c8.327-3.79,16.193-7.37,16.193-16.127c0-3.162-2.239-4.695-2.334-4.759L50.815,9.68v0.936c0,5.906-6.984,9.279-9.792,10.396 c3.788-8.48-2.312-15.017-2.376-15.084L38.02,5.272L37.8,6.151c-0.047,0.188-4.815,18.732-15.152,18.732 c-1.936,0-3.288-0.581-4.018-1.726c-2.018-3.167,0.966-9.66,0.996-9.725l0.502-1.078l-1.121,0.395 C18.848,12.807,3.04,18.635,3.04,41.313c0,16.992,11.036,34.171,32.187,36.434L35.379,76.774z"
+              />
+              <path
+                fill="yellow"
+                d="M74.307,28.54l-0.702-0.805l-0.169,1.055c-0.011,0.065-1.098,6.518-5.616,6.518 c-1.175,0-2.042-0.338-2.647-1.032c-1.78-2.042-1.104-6.959-0.506-11.298c0.301-2.189,0.586-4.258,0.586-5.978 c0-12.36-9.102-16.062-9.193-16.098L53.99,0.094l1.523,1.618c0.049,0.051,4.857,5.245,4.857,12.929 c0,11.046-8.865,15.879-17.438,20.553c-7.115,3.879-13.835,7.542-13.835,14.514c0,3.052,1.962,3.902,2.045,3.937l0.434,0.18 l0.207-0.421c0.028-0.057,2.442-4.786,8.238-6.239l0.168-1.069c-5.38,1.185-8.186,5.019-9.026,6.382 c-0.425-0.358-1.065-1.164-1.065-2.77c0-6.378,6.17-9.741,13.313-13.636c8.418-4.589,17.959-9.791,17.959-21.431 c0-5.216-2.043-9.271-3.552-11.555C60.353,4.936,64.253,9.072,64.253,17c0,1.651-0.28,3.687-0.577,5.841 c-0.657,4.772-1.336,9.707,0.743,12.092c0.796,0.912,1.94,1.375,3.401,1.375c4.033,0,5.705-3.978,6.309-6.089 c0.727,1.583,1.878,5.208,1.878,12.265c0,22.422-18.541,34.521-35.985,34.521c-0.901,0-1.778-0.032-2.643-0.08l-0.155,0.986 c0.917,0.056,1.845,0.094,2.798,0.094c17.93,0,36.985-12.449,36.985-35.521C77.007,31.762,74.417,28.667,74.307,28.54z"
+              />
+            </g>
+          </svg>
+          <p>SMD Music APP</p>
+        </div>
+        <div id="firstnavdown">
+          <div id="Librarytext">
+            <div id="Librarytextcont">
+              <div id="Librarycont">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="rgb(179, 179, 179)"
+                  width="30px"
+                >
+                  <path
+                    d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                  ></path>
+                </svg>
+                <p>Your Library</p>
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  width="20px"
+                  fill="rgb(179, 179, 179)"
+                >
+                  <path
+                    d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div id="flowcont">
+              <section>
+                <p>Create your first playlist</p>
+                <h5>It's easy,we'll help you</h5>
+                <button onclick="playlist()">Create playlist</button>
+              </section>
+              <section id="secondflow">
+                <p>Let's find some podcasts to follow</p>
+                <h5>We'll keep you updated on new episodes</h5>
+                <button>Browse podcasts</button>
+              </section>
+            </div>
+
+            <div id="playlistcont">
+              <span>Create a playlist</span>
+              <p>Log in to create and share playlist</p>
+              <div id="notnow">
+                <div></div>
+                <div id="notnowbtn">
+                  <p id="not">Not now</p>
+                  <button><a href="login.html">Log in</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <audio style="background-color: red" src="">
+          <source src="Personal _ val9ja.com.mp3" type="" />
+        </audio>
+      </div>
+      <div id="secondnav">
+        <div id="headtop">
+          <header>
+            <div id="headerbtn">
+              <button id="homeBtn">
+                <abbr title="Home"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-encore-id="icon"
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    class="Svg-sc-ytk21e-0 bneLcE"
+                    width="30px"
+                    fill="rgb(179, 179, 179)"
+                  >
+                    <path
+                      d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z"
+                    ></path>
+                  </svg>
+                </abbr>
+              </button>
+              <div id="homeinput">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  class="Svg-sc-ytk21e-0 bHdpig TTmGm8qVTZIyhkzEGOqr"
+                  viewBox="0 0 24 24"
+                  width="25px"
+                  fill="rgb(179, 179, 179)"
+                >
+                  <path
+                    d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"
+                  ></path>
+                </svg>
+                <input
+                  type="text"
+                  id="searchbtn"
+                  placeholder="What do you want to play"
+                />
+                <div id="dashline"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  class="Svg-sc-ytk21e-0 bneLcE"
+                  width="25px"
+                  fill="white"
+                >
+                  <path
+                    d="M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z"
+                  ></path>
+                  <path
+                    d="M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9H3.525zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4V2z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div id="headersignup">
+              <a href="">Install App</a>
+              <div>
+                <abbr title="What's New"
+                  ><img src="icons8-notification-bell-24.png" alt=""
+                /></abbr>
+              </div>
+              <button id="profilebtn">S</button>
+            </div>
+          </header>
+          <div id="profilecont">
+            <button><span>Account</span></button>
+            <button id="profileBtn">
+              <span>Profile</span>
+            </button>
+            <button><span>Upgrade to Premium</span></button>
+            <button><span>Settings</span></button>
+            <button><a href="index.html">Logout</a></button>
+          </div>
+
+          <div id="mainnav">
+            <div id="songcontainer"></div>
+
+            <div id="Popularcont">
+              <a href=""><h2>Browse all</h2></a>
+            </div>
+            <div id="Genrescont">
+              <div id="firstrow">
+                <div id="music1">
+                  <p>Music</p>
+                  <img src="music.jpeg" alt="" />
+                </div>
+                <div id="pod">
+                  <p>Podcast</p>
+                  <img src="pod1.jpeg" alt="" />
+                </div>
+                <div id="event1">
+                  <p>Live Events</p>
+                  <img src="1_live-events_category-image.jpg" alt="" />
+                </div>
+                <div id="foryou">
+                  <p>Made For You</p>
+                  <img src="for u.png" alt="" />
+                </div>
+              </div>
+              <div id="firstrow">
+                <div id="release">
+                  <p>New Realeases</p>
+                  <img src="new release.jpeg" alt="" />
+                </div>
+                <div id="afro">
+                  <p>Afro</p>
+                  <img src="africa.jpeg" alt="" />
+                </div>
+                <div id="hip">
+                  <p>Hip Hop</p>
+                  <img src="rap1.jpeg" alt="" />
+                </div>
+                <div id="pop">
+                  <p>Pop</p>
+                  <img src="pop1.jpeg" alt="" />
+                </div>
+              </div>
+              <div id="firstrow">
+                <div id="party">
+                  <p>Party</p>
+                  <img src="third1.jpeg" alt="" />
+                </div>
+                <div id="Charts">
+                  <p>Charts</p>
+                  <img src="third2.jpg" alt="" />
+                </div>
+                <div id="podchart">
+                  <p>Podcast Chart</p>
+                  <img src="third3.jpeg" alt="" />
+                </div>
+                <div id="Comedy">
+                  <p>Comedy</p>
+                  <img src="third4.jpeg" alt="" />
+                </div>
+              </div>
+              <div id="firstrow">
+                <div id="edu">
+                  <p>Educational</p>
+                  <img src="pod1.jpeg" alt="" />
+                </div>
+                <div id="crime">
+                  <p>True Crime</p>
+                  <img src="fourth1.jpeg" alt="" />
+                </div>
+                <div id="mood">
+                  <p>Mood</p>
+                  <img src="fourth2.jpeg" alt="" />
+                </div>
+                <div id="Gospel">
+                  <p>Christian & Gospel</p>
+                  <img src="fourth3.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div id="footers">
+              <div id="footerscont">
+                <ul>
+                  <span>Company</span>
+                  <a href="">About</a>
+                  <a href="">Jobs</a>
+                  <a href="">For the Record</a>
+                </ul>
+              </div>
+              <div id="footerscont">
+                <ul>
+                  <span>Communities</span>
+                  <a href="">For Artists</a>
+                  <a href="">Developers</a>
+                  <a href="">Advertising</a>
+                  <a href="">Investors </a>
+                  <a href="">Vendors</a>
+                </ul>
+              </div>
+              <div id="footerscont">
+                <ul>
+                  <span>Useful links</span>
+                  <a href="">Support</a>
+                  <a href="">Free Mobile App</a>
+                </ul>
+              </div>
+              <div id="footerscont">
+                <ul>
+                  <span>SMD Music App Plans</span>
+                  <a href="">Premium Individual</a>
+                  <a href="">Premium Duo</a>
+                  <a href="">Premium Family</a>
+                  <a href="">Premium Student</a>
+                  <a href="">SMD Music App Free</a>
+                </ul>
+              </div>
+              <div id="footerscontsvg">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-encore-id="icon"
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    fill="white"
+                    width="30px"
+                  >
+                    <path
+                      d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 0 1-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 0 1-.921-.599 2.477 2.477 0 0 1-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 0 1 .92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 0 0-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 0 0 2.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 0 0-.923-1.418A3.928 3.928 0 0 0 13.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z"
+                    ></path>
+                    <path
+                      d="M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216zm0 6.775a2.668 2.668 0 1 1 0-5.335 2.668 2.668 0 0 1 0 5.335zm4.27-5.978a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-encore-id="icon"
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    fill="white"
+                    width="30px"
+                  >
+                    <path
+                      d="M13.54 3.889a2.968 2.968 0 0 0 1.333-1.683 5.937 5.937 0 0 1-1.929.738 2.992 2.992 0 0 0-.996-.706 2.98 2.98 0 0 0-1.218-.254 2.92 2.92 0 0 0-2.143.889 2.929 2.929 0 0 0-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 0 1-3.484-.932A8.536 8.536 0 0 1 1.532 2.54a2.993 2.993 0 0 0-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 0 1-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 0 0 1.739 1.048 2.937 2.937 0 0 1-1.365.056 2.94 2.94 0 0 0 1.063 1.5 2.945 2.945 0 0 0 1.77.603 5.944 5.944 0 0 1-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 0 0 5.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 0 0 1.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 0 0 .738-1.988 8.417 8.417 0 0 0 .246-2.429 6.177 6.177 0 0 0 1.508-1.563c-.56.249-1.14.407-1.738.476z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-encore-id="icon"
+                    role="img"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    fill="white"
+                    width="30px"
+                  >
+                    <path
+                      d="M16 8a8 8 0 1 0-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0 0 16 8z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div id="dashfooter"></div>
+            <div id="abcont">
+              <div id="ab1">
+                Legal Safety & Privacy Center Privacy Policy Cookies About Ads
+                Accessibility
+              </div>
+              <div id="ab">© 2024 SMD Music App AB</div>
+            </div>
+          </div>
+
+          <div id="profile">
+            <div id="headercont">
+              <div id="imageprofile">
+                <div id="imageprofilecont">
+                  <input type="file" id="imageUpload" style="display: none" />
+                  <label id="imageprofilebutton" for="imageUpload">
+                    <svg
+                      id="svgIcon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      data-testid="user"
+                      viewBox="0 0 24 24"
+                      fill="black"
+                      width="80px"
+                    >
+                      <path
+                        d="M10.165 11.101a2.5 2.5 0 0 1-.67 3.766L5.5 17.173A2.998 2.998 0 0 0 4 19.771v.232h16.001v-.232a3 3 0 0 0-1.5-2.598l-3.995-2.306a2.5 2.5 0 0 1-.67-3.766l.521-.626.002-.002c.8-.955 1.303-1.987 1.375-3.19.041-.706-.088-1.433-.187-1.727a3.717 3.717 0 0 0-.768-1.334 3.767 3.767 0 0 0-5.557 0c-.34.37-.593.82-.768 1.334-.1.294-.228 1.021-.187 1.727.072 1.203.575 2.235 1.375 3.19l.002.002.521.626zm5.727.657-.52.624a.5.5 0 0 0 .134.753l3.995 2.306a5 5 0 0 1 2.5 4.33v2.232H2V19.77a5 5 0 0 1 2.5-4.33l3.995-2.306a.5.5 0 0 0 .134-.753l-.518-.622-.002-.002c-1-1.192-1.735-2.62-1.838-4.356-.056-.947.101-1.935.29-2.49A5.713 5.713 0 0 1 7.748 2.87a5.768 5.768 0 0 1 8.505 0 5.713 5.713 0 0 1 1.187 2.043c.189.554.346 1.542.29 2.489-.103 1.736-.838 3.163-1.837 4.355m-.001.001z"
+                      ></path>
+                    </svg>
+                    <img id="image" src="" alt="" />
+                  </label>
+                </div>
+                <div id="profilenamecont">
+                  <span>Profile</span>
+                  <h1 id="username">Username</h1>
+                  <span>1 Public Playlist •</span>
+                </div>
+              </div>
+            </div>
+            <div id="profilemaincont">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="30px"
+                  fill="white"
+                >
+                  <path
+                    d="M4.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm15 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-7.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                  ></path>
+                </svg>
+              </div>
+              <div id="profilemaincont2">
+                <a href="">Top artists this month</a>
+                <h5>Only visible to you</h5>
+                <img style="width: 20%" src="zee.jpg" alt="" />
+                <span>Zinoleesky</span>
+                <h5>Artist</h5>
+              </div>
+              <div id="topartists">
+                <a href="">Top artists this month</a>
+                <h5>Only visible to you</h5>
+                <div id="topartistscont">
+                  <div id="artistsnum">
+                    <span>1</span>
+                  </div>
+                  <div id="artistsdetailscont">
+                    <img src="zee.jpg" alt="" />
+                    <div id="grit">
+                      <p>Grit and Lust</p>
+                      <span>Zinoleesky</span>
+                    </div>
+                  </div>
+                  <div id="lust">
+                    <span>Grit and Lust</span>
+                  </div>
+                  <div>
+                    <p>3:10</p>
+                  </div>
+                </div>
+                <div id="topartistscont">
+                  <div id="artistsnum">
+                    <span>1</span>
+                  </div>
+                  <div id="artistsdetailscont">
+                    <img src="zee.jpg" alt="" />
+                    <div id="grit">
+                      <p>Grit and Lust</p>
+                      <span>Zinoleesky</span>
+                    </div>
+                  </div>
+                  <div id="lust">
+                    <span>Grit and Lust</span>
+                  </div>
+                  <div>
+                    <p>3:10</p>
+                  </div>
+                </div>
+                <div id="topartistscont">
+                  <div id="artistsnum">
+                    <span>1</span>
+                  </div>
+                  <div id="artistsdetailscont">
+                    <img src="zee.jpg" alt="" />
+                    <div id="grit">
+                      <p>Grit and Lust</p>
+                      <span>Zinoleesky</span>
+                    </div>
+                  </div>
+                  <div id="lust">
+                    <span>Grit and Lust</span>
+                  </div>
+                  <div>
+                    <p>3:10</p>
+                  </div>
+                </div>
+                <div id="topartistscont">
+                  <div id="artistsnum">
+                    <span>1</span>
+                  </div>
+                  <div id="artistsdetailscont">
+                    <img src="zee.jpg" alt="" />
+                    <div id="grit">
+                      <p>Grit and Lust</p>
+                      <span>Zinoleesky</span>
+                    </div>
+                  </div>
+                  <div id="lust">
+                    <span>Grit and Lust</span>
+                  </div>
+                  <div>
+                    <p>3:10</p>
+                  </div>
+                </div>
+              </div>
+              <div id="Publiccont">
+                <a href="">Public playlist</a>
+                <div id="Publiccont2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-encore-id="icon"
+                    role="img"
+                    aria-hidden="true"
+                    data-testid="card-image-fallback"
+                    viewBox="0 0 24 24"
+                    width="50px"
+                    fill="white"
+                  >
+                    <path
+                      d="M6 3h15v15.167a3.5 3.5 0 1 1-3.5-3.5H19V5H8v13.167a3.5 3.5 0 1 1-3.5-3.5H6V3zm0 13.667H4.5a1.5 1.5 0 1 0 1.5 1.5v-1.5zm13 0h-1.5a1.5 1.5 0 1 0 1.5 1.5v-1.5z"
+                    ></path>
+                  </svg>
+                </div>
+                <div id="Publiccont3">
+                  <span>My Playlist #1</span>
+                  <p>By User</p>
+                </div>
+              </div>
+              <div id="footers">
+                <div id="footerscont">
+                  <ul>
+                    <span>Company</span>
+                    <a href="">About</a>
+                    <a href="">Jobs</a>
+                    <a href="">For the Record</a>
+                  </ul>
+                </div>
+                <div id="footerscont">
+                  <ul>
+                    <span>Communities</span>
+                    <a href="">For Artists</a>
+                    <a href="">Developers</a>
+                    <a href="">Advertising</a>
+                    <a href="">Investors </a>
+                    <a href="">Vendors</a>
+                  </ul>
+                </div>
+                <div id="footerscont">
+                  <ul>
+                    <span>Useful links</span>
+                    <a href="">Support</a>
+                    <a href="">Free Mobile App</a>
+                  </ul>
+                </div>
+                <div id="footerscont">
+                  <ul>
+                    <span>SMD Music App Plans</span>
+                    <a href="">Premium Individual</a>
+                    <a href="">Premium Duo</a>
+                    <a href="">Premium Family</a>
+                    <a href="">Premium Student</a>
+                    <a href="">SMD Music App Free</a>
+                  </ul>
+                </div>
+                <div id="footerscontsvg">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      viewBox="0 0 16 16"
+                      fill="white"
+                      width="25px"
+                    >
+                      <path
+                        d="M8 1.44c2.136 0 2.389.009 3.233.047.78.036 1.203.166 1.485.276.348.128.663.332.921.598.266.258.47.573.599.921.11.282.24.706.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.204-.275 1.486a2.654 2.654 0 0 1-1.518 1.518c-.282.11-.706.24-1.486.275-.843.039-1.097.047-3.233.047s-2.39-.008-3.232-.047c-.78-.035-1.204-.165-1.486-.275a2.477 2.477 0 0 1-.921-.599 2.477 2.477 0 0 1-.599-.92c-.11-.282-.24-.706-.275-1.486-.038-.844-.047-1.096-.047-3.232s.009-2.39.047-3.233c.036-.78.166-1.203.275-1.485.129-.348.333-.663.599-.921a2.49 2.49 0 0 1 .92-.599c.283-.11.707-.24 1.487-.275.843-.038 1.096-.047 3.232-.047L8 1.441zm.001-1.442c-2.172 0-2.445.01-3.298.048-.854.04-1.435.176-1.943.373a3.928 3.928 0 0 0-1.417.923c-.407.4-.722.883-.923 1.417-.198.508-.333 1.09-.372 1.942C.01 5.552 0 5.826 0 8c0 2.172.01 2.445.048 3.298.04.853.174 1.433.372 1.941.2.534.516 1.017.923 1.417.4.407.883.722 1.417.923.508.198 1.09.333 1.942.372.852.039 1.126.048 3.299.048 2.172 0 2.445-.01 3.298-.048.853-.04 1.433-.174 1.94-.372a4.087 4.087 0 0 0 2.34-2.34c.199-.508.334-1.09.373-1.942.039-.851.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.853-.174-1.433-.372-1.94a3.924 3.924 0 0 0-.923-1.418A3.928 3.928 0 0 0 13.24.42c-.508-.197-1.09-.333-1.942-.371-.851-.041-1.125-.05-3.298-.05l.001-.001z"
+                      ></path>
+                      <path
+                        d="M8 3.892a4.108 4.108 0 1 0 0 8.216 4.108 4.108 0 0 0 0-8.216zm0 6.775a2.668 2.668 0 1 1 0-5.335 2.668 2.668 0 0 1 0 5.335zm4.27-5.978a.96.96 0 1 0 0-1.92.96.96 0 0 0 0 1.92z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      viewBox="0 0 16 16"
+                      fill="white"
+                      width="25px"
+                    >
+                      <path
+                        d="M13.54 3.889a2.968 2.968 0 0 0 1.333-1.683 5.937 5.937 0 0 1-1.929.738 2.992 2.992 0 0 0-.996-.706 2.98 2.98 0 0 0-1.218-.254 2.92 2.92 0 0 0-2.143.889 2.929 2.929 0 0 0-.889 2.15c0 .212.027.442.08.691a8.475 8.475 0 0 1-3.484-.932A8.536 8.536 0 0 1 1.532 2.54a2.993 2.993 0 0 0-.413 1.523c0 .519.12 1 .361 1.445.24.445.57.805.988 1.08a2.873 2.873 0 0 1-1.373-.374v.04c0 .725.23 1.365.69 1.92a2.97 2.97 0 0 0 1.739 1.048 2.937 2.937 0 0 1-1.365.056 2.94 2.94 0 0 0 1.063 1.5 2.945 2.945 0 0 0 1.77.603 5.944 5.944 0 0 1-3.77 1.302c-.243 0-.484-.016-.722-.048A8.414 8.414 0 0 0 5.15 14c.905 0 1.763-.12 2.572-.361.81-.24 1.526-.57 2.147-.988a9.044 9.044 0 0 0 1.683-1.46c.5-.556.911-1.155 1.234-1.798a9.532 9.532 0 0 0 .738-1.988 8.417 8.417 0 0 0 .246-2.429 6.177 6.177 0 0 0 1.508-1.563c-.56.249-1.14.407-1.738.476z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      data-encore-id="icon"
+                      role="img"
+                      aria-hidden="true"
+                      viewBox="0 0 16 16"
+                      fill="white"
+                      width="25px"
+                    >
+                      <path
+                        d="M16 8a8 8 0 1 0-9.25 7.903v-5.59H4.719V8H6.75V6.237c0-2.005 1.194-3.112 3.022-3.112.875 0 1.79.156 1.79.156V5.25h-1.008c-.994 0-1.304.617-1.304 1.25V8h2.219l-.355 2.313H9.25v5.59A8.002 8.002 0 0 0 16 8z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div id="dashfooter"></div>
+              <div id="ab">© 2024 SMD Music App AB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="thirdnav">
+      <div></div>
+      <div id="musicicon">
+        <div id="musiciconcont">
+          <div id="backicon1">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                class="Svg-sc-ytk21e-0 dYnaPI"
+                fill="white"
+                width="15px"
+              >
+                <path
+                  d="M13.151.922a.75.75 0 1 0-1.06 1.06L13.109 3H11.16a3.75 3.75 0 0 0-2.873 1.34l-6.173 7.356A2.25 2.25 0 0 1 .39 12.5H0V14h.391a3.75 3.75 0 0 0 2.873-1.34l6.173-7.356a2.25 2.25 0 0 1 1.724-.804h1.947l-1.017 1.018a.75.75 0 0 0 1.06 1.06L15.98 3.75 13.15.922zM.391 3.5H0V2h.391c1.109 0 2.16.49 2.873 1.34L4.89 5.277l-.979 1.167-1.796-2.14A2.25 2.25 0 0 0 .39 3.5z"
+                ></path>
+                <path
+                  d="m7.5 10.723.98-1.167.957 1.14a2.25 2.25 0 0 0 1.724.804h1.947l-1.017-1.018a.75.75 0 1 1 1.06-1.06l2.829 2.828-2.829 2.828a.75.75 0 1 1-1.06-1.06L13.109 13H11.16a3.75 3.75 0 0 1-2.873-1.34l-.787-.938z"
+                ></path>
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                class="Svg-sc-ytk21e-0 dYnaPI"
+                fill="white"
+                width="15px"
+              >
+                <path
+                  d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <span>
+            <abbr title="Pause"
+              ><button id="pauseSvg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  class="Svg-sc-ytk21e-0 dYnaPI"
+                  width="20px"
+                  fill="white"
+                >
+                  <path
+                    d="M2.7 1a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7H2.7zm8 0a.7.7 0 0 0-.7.7v12.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-2.6z"
+                  ></path>
+                </svg></button
+            ></abbr>
+            <abbr title="Play"
+              ><button id="playPauseBtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  class="Svg-sc-ytk21e-0 bneLcE zOsKPnD_9x3KJqQCSmAq"
+                  viewBox="0 0 24 24"
+                  width="20px"
+                  fill="white"
+                >
+                  <path
+                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                  ></path>
+                </svg></button
+            ></abbr>
+          </span>
+          <div id="nexticon1">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                class="Svg-sc-ytk21e-0 dYnaPI"
+                fill="white"
+                width="15px"
+              >
+                <path
+                  d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z"
+                ></path>
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+                class="Svg-sc-ytk21e-0 dYnaPI"
+                fill="white"
+                width="15px"
+              >
+                <path
+                  d="M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="customcontrols">
+          <span id="currentTime">00:00</span>
+          <input
+            type="range"
+            id="seekBar"
+            value="0"
+            step="1"
+            min="0"
+            max="100"
+          />
+          <span id="duration">00:00</span>
+        </div>
+      </div>
+      <div style="display: none" id="audiocont"></div>
+      <div id="volumecont">
+        <abbr title="Mute"
+          ><button id="muteBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#fff"
+            >
+              <path
+                d="M280-360v-240h160l200-200v640L440-360H280Zm80-80h114l86 86v-252l-86 86H360v80Zm100-40Z"
+              />
+            </svg></button
+        ></abbr>
+        <abbr title="Unmute">
+          <button id="unmuteBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Zm-80 238v-94l-72-72H200v80h114l86 86Zm-36-130Z"
+              />
+            </svg></button
+        ></abbr>
+
+        <input
+          type="range"
+          id="volumeBar"
+          value="100"
+          step="1"
+          min="0"
+          max="100"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="loginmainpage.js" type="module"></script>
+<script src="test.js"></script>
+
+<!-- <input type="file" id="imageUpload" accept="image/*" /> -->
+<!-- <input
+type="file"
+id="imageprofileinput"
+alt="Choose photo"
+/> -->
+<!-- progress id="progressbar" value="400" max="400"></progress> -->

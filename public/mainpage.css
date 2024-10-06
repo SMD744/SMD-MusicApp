@@ -1,0 +1,910 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+#container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.7%;
+  height: 90%;
+}
+#firstnav {
+  background-color: #111;
+  width: 20%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+#secondnav {
+  width: 80%;
+}
+#headtop {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  background-color: rgb(9, 9, 9);
+  height: 4%;
+  border-radius: 10px 10px 0 0;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  /* position: fixed; */
+}
+#mainnav {
+  display: show;
+  background-color: rgb(18, 18, 18);
+  overflow: auto;
+
+  /* transition: scroll 0.9s; */
+}
+
+#headerbtn button {
+  background-color: black;
+  border-radius: 50px;
+  top: 10px;
+  padding: 5px 7px;
+  border: none;
+}
+
+#headersignup #signupbtn {
+  background-color: transparent;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+#headersignup a {
+  color: #a1a1a1;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+#headersignup #signupbtn:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+#headerbtn button:active {
+  color: #fff;
+}
+#headersignup {
+  display: flex;
+  gap: 30px;
+  padding-right: 20px;
+}
+#headersignup #loginbtn {
+  background-color: white;
+  border-radius: 50px;
+  padding: 13px 30px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+#headersignup #loginbtn:hover {
+  background-color: #e6e0e0;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+  transform: scale(1.05);
+}
+#firstnav-left {
+  background-color: #1c1b1b;
+  width: 95%;
+  border-radius: 10px;
+  height: 160px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#firstnavcont {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#logoimg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: fantasy;
+  font-size: medium;
+  font-weight: 400;
+  color: white;
+  padding: 0 10px;
+}
+
+#logoimg img {
+  width: 30%;
+  padding: 30px 0 10px 20px;
+}
+#hometext {
+  display: flex;
+  color: rgb(179, 179, 179);
+  font-size: 20px;
+  padding-left: 20px;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+#hometext:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+#hometext:active {
+  color: rgb(255, 255, 255);
+}
+
+#Searchtext {
+  display: flex;
+  color: rgb(179, 179, 179);
+  font-size: 20px;
+  padding-left: 20px;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+#Searchtext:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+#Searchtext:active {
+  color: rgb(255, 255, 255);
+}
+#firstnavdown {
+  background-color: #1c1b1b;
+  border-radius: 10px;
+  height: 160px;
+  margin: 10px;
+}
+#Librarytext {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  color: LightGray;
+  font-size: 16px;
+  padding: 10px 14px 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+#Librarycont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#Librarycont :hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s;
+}
+#Librarycont :active {
+  color: rgb(255, 255, 255);
+}
+
+#flowcont {
+  background-color: #1c1b1b;
+  overflow: auto;
+  height: 130%;
+}
+section {
+  background-color: #1f1f1f;
+  width: 92%;
+  margin: 10px;
+  border-radius: 10px;
+  height: 110px;
+}
+section p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 14px 0 20px;
+}
+section h5 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 14px 0 20px;
+}
+section button {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 7px 20px;
+  margin: 10px 14px 0 20px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+section button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.3s;
+}
+#secondflow {
+  background-color: #1f1f1f;
+  width: 92%;
+  margin: 10px;
+  border-radius: 10px;
+  height: 160px;
+}
+#secondflow button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+#secondflow button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.3s;
+}
+#futacont {
+  display: flex;
+  padding: 40px 14px 0 20px;
+  background-color: #1c1b1b;
+}
+#futamain {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#futacont span {
+  font-size: 11px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #a1a1a1;
+}
+#futacont #Legal {
+  display: flex;
+  gap: 20px;
+}
+#futacont #Privacycont {
+  display: flex;
+  gap: 20px;
+}
+#btnenglish {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid grey;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  padding: 5px 10px;
+  margin: 70px 14px 0 20px;
+  cursor: pointer;
+  color: #fff;
+  gap: 5px;
+}
+#btnenglish:hover {
+  border: 1px solid rgb(240, 240, 240);
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+#thirdnav {
+  background: linear-gradient(
+    to right,
+    rgb(170, 47, 154) 10%,
+    rgb(148, 84, 183) 30%,
+    rgb(110, 129, 221) 100%
+  );
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  position: fixed;
+}
+
+#thirdnav p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0px 14px 0 20px;
+}
+#thirdnav span {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0px 14px 0 20px;
+}
+
+#thirdnav button {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 15px 20px;
+  margin: 10px 14px 0 10px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+#thirdnav button:hover {
+  background-color: #e6e0e0;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+#thirdnav button:focus {
+  outline: none;
+}
+#playlistcont {
+  display: none;
+  flex-direction: column;
+  background-color: rgb(0, 116, 224);
+  position: relative;
+  left: 250px;
+  top: -440px;
+  border-radius: 10px;
+  width: 300px;
+  height: 70%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+#playlistcont span {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 0;
+  line-height: 22.4px;
+}
+#playlistcont p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 19.6px;
+}
+
+#notnow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#notnowbtn {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+#notnowbtn p {
+  font-family: "Roboto", sans-serif;
+  color: #a1a1a1;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 0;
+  line-height: 19.6px;
+}
+#notnowbtn p:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+#notnowbtn button {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 0px 15px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  align-items: center;
+}
+#notnowbtn a {
+  text-decoration: none;
+  color: #111;
+}
+
+#notnowbtn button:hover {
+  background-color: #e6e0e0;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+#Popularcont {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 14px 0 30px;
+}
+#albumcont {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 14px 0 30px;
+}
+#Popularcont h5 {
+  font-family: "Roboto", sans-serif;
+  color: #a1a1a1;
+  line-height: normal;
+}
+#albumcont h5 {
+  font-family: "Roboto", sans-serif;
+  color: #a1a1a1;
+  line-height: normal;
+}
+#albumcont h5:hover {
+  color: #a1a1a1;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+#Popularcont h5:hover {
+  color: #a1a1a1;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+#Popularcont a {
+  text-decoration: none;
+  color: white;
+  font-style: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+#albumcont a {
+  text-decoration: none;
+  color: white;
+  font-style: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+#Popularcont a:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+#albumcont a:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+/* #asake {
+  width: 50%;
+  height: 50%;
+} */
+#asake #asakebtn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px;
+  object-fit: cover;
+  padding-top: 35px;
+}
+#asake #remabtn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px;
+  object-fit: cover;
+  padding-top: 35px;
+}
+#asake #youngbtn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px;
+  object-fit: cover;
+  padding-top: 35px;
+}
+#asake #burnabtn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px;
+  object-fit: cover;
+  padding-top: 35px;
+}
+#asake #vicbtn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px;
+  object-fit: cover;
+  padding-top: 35px;
+}
+#asake #olamidebtn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100px;
+  object-fit: cover;
+  padding-top: 35px;
+}
+#Genrescont {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 30px 14px 0 30px;
+}
+#albumcont2 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px 14px 0 30px;
+}
+#asake img {
+  height: 12em;
+  width: 12em;
+  border-radius: 100px;
+  object-fit: cover;
+}
+#young img {
+  height: 10em;
+  width: 10em;
+  object-fit: cover;
+  border-radius: 7px;
+}
+#asake p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 8px 0;
+  line-height: normal;
+}
+#young p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 8px 0;
+  line-height: normal;
+  width: fit-content;
+}
+#asake span {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-style: 14px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+#young span {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-style: 12px;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+}
+#radio {
+  display: flex;
+  flex-direction: column;
+  width: 10em;
+  gap: 10px;
+}
+#radio img {
+  height: 10em;
+  width: 10em;
+  object-fit: cover;
+  border-radius: 7px;
+}
+#radio h5 {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-style: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  width: 12em;
+}
+#footers {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 100px 14px 0 30px;
+  margin-bottom: 30px;
+}
+
+#footers a {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-style: 14px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+#footers a:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+#footerscont ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* padding: 30px 14px 0 30px; */
+}
+#footerscontsvg {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#footerscontsvg svg {
+  background-color: #282828;
+  border-radius: 50px;
+  padding: 10px;
+}
+#footerscontsvg svg:hover {
+  background-color: #908d8d;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+#dashfooter {
+  border-top: 1px solid #282828;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+#ab {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 20px 14px 0 30px;
+  color: #a1a1a1;
+  margin-bottom: 100px;
+}
+#headercont1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px 14px 0px 30px;
+  background: linear-gradient(rgb(143, 77, 70) 0%, rgb(0, 0, 0) 80%);
+}
+
+#headercont {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px 14px 0px 30px;
+  background-image: url(rcover.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#imageprofilecont img {
+  height: 200px;
+  width: 200px;
+  border-radius: 120px;
+  object-fit: cover;
+}
+#nameartist {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 10%;
+}
+#nameartist p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 3px 0px 0 0px;
+  color: RGB(255, 255, 255);
+}
+#profilenamecont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#artistname h1 {
+  font-weight: 800;
+  font-size: 96px;
+}
+#artistname p {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+}
+#playcont svg {
+  border-radius: 50px;
+  background-color: #1db954;
+  padding: 13px;
+}
+#playcont svg:hover {
+  background-color: #07c74a;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+#playmain {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 0 0 10px;
+}
+#playmain button {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 50px;
+
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+#profile {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
+#remaprofile {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
+#profilemaincont2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px 14px 0 30px;
+}
+#profilemaincont2 h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 3px 0px 0 0px;
+  color: RGB(255, 255, 255);
+}
+#artistsdetailscont {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 65%;
+}
+#artistsdetailscont img {
+  width: 5%;
+}
+#topartistscont {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 30px 14px 0 30px;
+  align-items: center;
+}
+#artistsnum span {
+  color: #a1a1a1;
+  font-style: 14px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+#grit p {
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+#lust {
+  width: 20%;
+}
+#lust span {
+  color: #a1a1a1;
+  font-style: 14px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+#mins p {
+  color: #a1a1a1;
+  font-style: 14px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+dialog {
+  display: show;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 500px;
+  /* height: 400px; */
+  top: 30%;
+  left: 40%;
+}
+dialog p {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+dialog p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+dialog img {
+  width: 40%;
+}
+#openMe {
+  border: none;
+  border-radius: none;
+}
+#playmaincont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 0 0 10px;
+}
+#playmaincont button {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 15px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+#playmaincont p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+#playmaincont span {
+  color: #908d8d;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+#playmaincont a {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
