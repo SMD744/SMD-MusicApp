@@ -19,6 +19,7 @@ import {
 
 let API_KEY;
 
+console.log("Fetching API Key from /api/apikey");
 fetch("/api/apikey") // Make a request to your serverless function
   .then((response) => response.json())
   .then((data) => {
