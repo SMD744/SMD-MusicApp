@@ -5,19 +5,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/fireba
 
 // Your web app's Firebase configuration
 
-let API_KEY;
-console.log("Fetching API Key from ./api/apikey");
-
-fetch("./api/apikey") // Make a request to your serverless function
-  .then((response) => response.json())
-  .then((data) => {
-    const apiKey = data.apiKey; // Access the API key returned by the serverless function
-    console.log("API Key:", apiKey); // Use the API key in your frontend code
-    API_KEY = apiKey; // Store the API key in a global variable or use it as needed
-  })
-  .catch((error) => console.error("Error fetching API key:", error));
 const firebaseConfig = {
-  apiKey: API_KEY,
+  apiKey: "AIzaSyCCCiGD_kceWbbhuammqc1s7v5YBvtgYIU",
   authDomain: "smdproject-8fea5.firebaseapp.com",
   databaseURL: "https://smdproject-8fea5-default-rtdb.firebaseio.com",
   projectId: "smdproject-8fea5",
