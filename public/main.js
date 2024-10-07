@@ -4,9 +4,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/fireba
 // https://firebase.google.com/docs/web/setup#available-libraries
 let API_KEY;
 
-console.log("Fetching API Key from /api/apikey");
+console.log("Fetching API Key from ./api/apikey");
 
-fetch("/api/apikey") // Make a request to your serverless function
+fetch("./api/apikey") // Make a request to your serverless function
   .then((response) => response.json())
   .then((data) => {
     const apiKey = data.apiKey; // Access the API key returned by the serverless function
