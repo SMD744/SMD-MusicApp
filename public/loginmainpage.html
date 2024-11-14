@@ -185,12 +185,12 @@
             </button>
             <button><span>Upgrade to Premium</span></button>
             <button><span>Settings</span></button>
-            <button><a href="index.html">Logout</a></button>
+            <button id="logout">Logout</button>
           </div>
 
           <div id="mainnav">
             <div id="songcontainer"></div>
-
+            <div id="audiodiv" style="display: none"></div>
             <div id="Popularcont">
               <a href=""><h2>Browse all</h2></a>
             </div>
@@ -613,7 +613,21 @@
       </div>
     </div>
     <div id="thirdnav">
-      <div></div>
+      <div style="display: flex; gap: 20px; align-items: start">
+        <img
+          id="songpicture"
+          src=""
+          alt=""
+          height="60"
+          width="60"
+          style="border-radius: 50%; display: none"
+        />
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <span id="nameCONTPIC"></span>
+          <span id="songalbum"></span>
+        </div>
+      </div>
+
       <div id="musicicon">
         <div id="musiciconcont">
           <div id="backicon1">
@@ -783,6 +797,7 @@
 
 <script src="loginmainpage.js" type="module"></script>
 <script src="test.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- <input type="file" id="imageUpload" accept="image/*" /> -->
 <!-- <input

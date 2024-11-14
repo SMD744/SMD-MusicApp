@@ -59,7 +59,7 @@ signWithGg.addEventListener("click", () => {
       const email = error.customData.email;
       // The AuthCredential type that was used.
       const credential = GoogleAuthProvider.credentialFromError(error);
-      alert(errorMessage);
+      showError(errorMessage);
     });
 });
 // signWithFb.addEventListener("click", () => {
@@ -93,13 +93,13 @@ loginBtn.addEventListener("click", () => {
 
 function login() {
   if (!emailInput.value.trim() || !passwordInput.value.trim()) {
-    alert("Please enter your email and password");
+    showError("Please enter your email and password");
     return;
   } else if (!emailRegex.test(emailInput.value)) {
-    alert("Please enter a valid email");
+    showError("Please enter a valid email");
     return;
   } else if (!passwordRegex.test(passwordInput.value.trim())) {
-    alert("Please enter a valid password");
+    showError("Please enter a valid password");
     return;
   } else {
     signInWithEmailAndPassword(
@@ -110,13 +110,49 @@ function login() {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        alert("Login Successful");
-        window.location.href = "loginmainpage.html";
+        showSuccess("Login Successful").then(() => {
+          location.href = "loginmainpage.html";
+        });
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        alert(errorMessage);
+        showError(errorMessage);
       });
   }
+}
+async function showSuccess(message) {
+  return new Promise((resolve) => {
+    Swal.fire({
+      background: "#28a745",
+      color: "#fff",
+      height: "fit-content",
+      padding: "0 0",
+      position: "top",
+      showConfirmButton: false,
+      text: `${message}`,
+      timer: 1500,
+      timerProgressBar: true,
+    }).then(() => {
+      resolve();
+    });
+  });
+}
+
+async function showError(message) {
+  return new Promise((resolve) => {
+    Swal.fire({
+      background: "#f00",
+      color: "#fff",
+      height: "fit-content",
+      padding: "0 0",
+      position: "top",
+      showConfirmButton: false,
+      text: `${message}`,
+      timer: 1500,
+      timerProgressBar: true,
+    }).then(() => {
+      resolve();
+    });
+  });
 }

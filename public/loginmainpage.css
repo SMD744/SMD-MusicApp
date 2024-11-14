@@ -1303,3 +1303,6 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   cursor: pointer;
 }
+#secondnavplay {
+  width: 100%;
+}

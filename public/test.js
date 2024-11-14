@@ -8,6 +8,7 @@ const unmuteBtn = document.getElementById("unmuteBtn");
 const volumeBar = document.getElementById("volumeBar");
 const URI = "https://robo-music-api.onrender.com/music/my-api";
 const songcontainer = document.getElementById("songcontainer");
+
 // const musiccontainer = document.getElementById("musiccontainer");
 
 // Fetch and display music buttons
@@ -63,6 +64,7 @@ const fetchMusic = async () => {
 
       btn.textContent = element.artistName;
       div.setAttribute("data-song-url", element.songUrl); // Store the actual song URL
+      div.setAttribute("data-song-id", element.id);
       btn.style.color = "white";
       btn.style.fontSize = "1rem";
       btn.style.backgroundColor = "transparent";
@@ -83,7 +85,7 @@ const fetchMusic = async () => {
 
       // Add click event listener to each button directly
       div.addEventListener("click", (e) => {
-        playMusic(e);
+        playMusic(e, json);
       });
     });
   } catch (error) {
@@ -93,10 +95,17 @@ const fetchMusic = async () => {
 };
 
 // Function to play the selected song
-function playMusic(event) {
+function playMusic(event, json) {
   console.log("Button clicked, playing music...");
   const songUrl = event.target.getAttribute("data-song-url");
   console.log("Song URL:", songUrl); // Log the song URL to ensure it's correct
+  const songId = event.target.getAttribute("data-song-id");
+  const index = Number(songId) - 1;
+
+  nameCONTPIC.innerText = json[index].artistName;
+  songpicture.style.display = "block";
+  songpicture.src = json[index].songImage;
+  songalbum.innerText = json[index].albumName;
 
   // Remove any existing audio elements
   const existingAudio = thirdnav.querySelector("audio");
@@ -207,4 +216,10 @@ function formatTime(seconds) {
   const mins = Math.floor(seconds / 60);
   const secs = Math.floor(seconds % 60);
   return `${mins}:${secs < 10 ? "0" : ""}${secs}`;
+}
+function playlist() {
+  window.location.href = "playlist.html";
+}
+function homeBtn() {
+  window.location.href = "index.html";
 }

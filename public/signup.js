@@ -110,7 +110,7 @@ function checkEmail() {
           cont.style.display = "none";
           console.log("email does not exist");
         } else {
-          alert("An account already exists with this email.");
+          showError("An account already exists with this email.");
         }
       }
     });
@@ -340,13 +340,13 @@ step3next.addEventListener("click", () => {
           window.location.href = "loginmainpage.html";
         })
         .catch((error) => {
-          alert(error.message);
+          showError(error.message);
         });
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      alert(errorMessage);
+      showError(errorMessage);
       // ..
     });
 });
@@ -370,7 +370,7 @@ signWithGg.addEventListener("click", () => {
       const email = error.customData.email;
       // The AuthCredential type that was used.
       const credential = GoogleAuthProvider.credentialFromError(error);
-      alert(errorMessage);
+      showError(errorMessage);
     });
 });
 
@@ -383,8 +383,9 @@ signWithFb.addEventListener("click", () => {
       // This gives you a Facebook Access Token. You can use it to access the Facebook API.
       const credential = FacebookAuthProvider.credentialFromResult(result);
       const accessToken = credential.accessToken;
-      alert("Signed In");
-      location.href = "loginmainpage.html";
+      showSuccess("Signed In").then(() => {
+        location.href = "loginmainpage.html";
+      });
     })
     .catch((error) => {
       // Handle Errors here.
@@ -394,7 +395,42 @@ signWithFb.addEventListener("click", () => {
       const email = error.customData.email;
       // The AuthCredential type that was used.
       const credential = FacebookAuthProvider.credentialFromError(error);
-      alert(errorMessage);
+      showError(errorMessage);
       // ...
     });
 });
+async function showSuccess(message) {
+  return new Promise((resolve) => {
+    Swal.fire({
+      background: "#28a745",
+      color: "#fff",
+      height: "fit-content",
+      padding: "0 0",
+      position: "top",
+      showConfirmButton: false,
+      text: `${message}`,
+      timer: 1500,
+      timerProgressBar: true,
+    }).then(() => {
+      resolve();
+    });
+  });
+}
+
+async function showError(message) {
+  return new Promise((resolve) => {
+    Swal.fire({
+      backgroundColor: "red",
+      color: "#fff",
+      height: "fit-content",
+      padding: "0 0",
+      position: "top-end",
+      showConfirmButton: false,
+      text: `${message}`,
+      timer: 1500,
+      timerProgressBar: true,
+    }).then(() => {
+      resolve();
+    });
+  });
+}
